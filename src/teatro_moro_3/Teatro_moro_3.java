@@ -23,6 +23,10 @@ public class Teatro_moro_3 {
         static double combo_bancoduoc=0.50;                                     //variable de instancia
      }
      
+     class ubicacion{
+         static String ubicacion=null;                                          //variable de instancia
+     }
+     
     public static void main(String[] args) {
         int Opciones;
         
@@ -65,7 +69,7 @@ public class Teatro_moro_3 {
  public static void entradas (){
      int edad,vip,plateabaja,plateaalta,palcos,preciobase=0,total=0;
      double descuento=0,descuentoAplicado;
-     String edades,categoria,pagar,ubicacion=null;
+     String edades,categoria,pagar;
      
      System.out.println("Por favor ingresar su edad:");
             do{ 
@@ -95,25 +99,25 @@ public class Teatro_moro_3 {
              case "vip":
                     vip = 25000;
                     total =(total+vip);
-                    ubicacion = "Vip";
+                    ubicacion.ubicacion = "Vip";
                     preciobase = 25000;
                     break;
                 case "platea baja":
                     plateabaja = 19000;
                     total = (total+plateabaja);
-                    ubicacion = "Platea baja";
+                    ubicacion.ubicacion = "Platea baja";
                     preciobase = 19000;
                     break;
                 case "platea alta":
                     plateaalta =11000;
                     total = (total+plateaalta);
-                    ubicacion = "Platea alta";
+                    ubicacion.ubicacion = "Platea alta";
                     preciobase = 11000;
                     break;
                 case "palcos":
                     palcos = 7200;
                     total = (total+palcos);
-                    ubicacion = "Palcos";
+                    ubicacion.ubicacion = "Palcos";
                     preciobase = 7200;
                     break;
                 default:
@@ -136,7 +140,7 @@ public class Teatro_moro_3 {
      
             
             System.out.println("Resumen de la compra:");
-            System.out.println("Ubicacion del asiento: " + ubicacion);
+            System.out.println("Ubicacion del asiento: " + ubicacion.ubicacion);
             System.out.println("Precio base de la entrada: $" + preciobase);
             System.out.println("Descuento aplicado: " + (descuento * 100) + "%");
             System.out.println("Precio final a pagar: $" + total);
@@ -158,7 +162,7 @@ public class Teatro_moro_3 {
      
      int edad,vip,plateabaja,plateaalta,palcos,Opciones,preciobase=0,total=0;
      double descuento=0,descuentoAplicado;
-     String edades,categoria,pagar,ubicacion=null;
+     String edades,categoria,pagar;
      
      
      
@@ -174,7 +178,7 @@ public class Teatro_moro_3 {
          
          
          case 1:
-     System.out.println("Por favor ingresar su edad para validar si opta para los descuento (estudiante/adulto_mayor:");;
+     System.out.println("Por favor ingresar su edad para validar si opta para los descuento (estudiante/adulto_mayor):");
             do{ 
             edad = entrada.nextInt();
             if (edad<5||edad>100){
@@ -202,25 +206,25 @@ public class Teatro_moro_3 {
              case "vip":
                     vip = 25000;
                     total =(total+vip);
-                    ubicacion = "Vip";
+                    ubicacion.ubicacion = "Vip";
                     preciobase = 25000;
                     break;
                 case "platea baja":
                     plateabaja = 19000;
                     total = (total+plateabaja);
-                    ubicacion = "Platea baja";
+                    ubicacion.ubicacion = "Platea baja";
                     preciobase = 19000;
                     break;
                 case "platea alta":
                     plateaalta =11000;
                     total = (total+plateaalta);
-                    ubicacion = "Platea alta";
+                    ubicacion.ubicacion= "Platea alta";
                     preciobase = 11000;
                     break;
                 case "palcos":
                     palcos = 7200;
                     total = (total+palcos);
-                    ubicacion = "Palcos";
+                    ubicacion.ubicacion = "Palcos";
                     preciobase = 7200;
                     break;
                 default:
@@ -243,7 +247,7 @@ public class Teatro_moro_3 {
      
             
             System.out.println("Resumen de la compra:");
-            System.out.println("Ubicacion del asiento: " + ubicacion);
+            System.out.println("Ubicacion del asiento: " + ubicacion.ubicacion);
             System.out.println("Precio base de la entrada: $" + preciobase*2);
             System.out.println("Descuento aplicado: " + (descuento * 100) + "%");
             System.out.println("Descuento Promocion: "+Combo_pareja.combo_pareja);
@@ -264,7 +268,7 @@ public class Teatro_moro_3 {
          break;
          
          case 2:
-              System.out.println("Por favor ingresar su edad para validar si opta para los descuento (estudiante/adulto_mayor:");
+              System.out.println("Por favor ingresar su edad para validar si opta para los descuento (estudiante/adulto_mayor):");
             do{ 
             edad = entrada.nextInt();
             if (edad<5||edad>100){
@@ -292,25 +296,25 @@ public class Teatro_moro_3 {
              case "vip":
                     vip = 25000;
                     total =(total+vip);
-                    ubicacion = "Vip";
+                    ubicacion.ubicacion = "Vip";
                     preciobase = 25000;
                     break;
                 case "platea baja":
                     plateabaja = 19000;
                     total = (total+plateabaja);
-                    ubicacion = "Platea baja";
+                    ubicacion.ubicacion = "Platea baja";
                     preciobase = 19000;
                     break;
                 case "platea alta":
                     plateaalta =11000;
                     total = (total+plateaalta);
-                    ubicacion = "Platea alta";
+                    ubicacion.ubicacion = "Platea alta";
                     preciobase = 11000;
                     break;
                 case "palcos":
                     palcos = 7200;
                     total = (total+palcos);
-                    ubicacion = "Palcos";
+                    ubicacion.ubicacion = "Palcos";
                     preciobase = 7200;
                     break;
                 default:
@@ -333,7 +337,7 @@ public class Teatro_moro_3 {
      
             
             System.out.println("Resumen de la compra:");
-            System.out.println("Ubicacion del asiento: " + ubicacion);
+            System.out.println("Ubicacion del asiento: " + ubicacion.ubicacion);
             System.out.println("Precio base de la entrada: $" + preciobase*4);
             System.out.println("Descuento aplicado: " + (descuento * 100) + "%");
             System.out.println("Descuento Promocion: "+Combo_familiar.combo_familiar);
@@ -381,25 +385,25 @@ public class Teatro_moro_3 {
              case "vip":
                     vip = 25000;
                     total =(total+vip);
-                    ubicacion = "Vip";
+                    ubicacion.ubicacion = "Vip";
                     preciobase = 25000;
                     break;
                 case "platea baja":
                     plateabaja = 19000;
                     total = (total+plateabaja);
-                    ubicacion = "Platea baja";
+                    ubicacion.ubicacion = "Platea baja";
                     preciobase = 19000;
                     break;
                 case "platea alta":
                     plateaalta =11000;
                     total = (total+plateaalta);
-                    ubicacion = "Platea alta";
+                    ubicacion.ubicacion = "Platea alta";
                     preciobase = 11000;
                     break;
                 case "palcos":
                     palcos = 7200;
                     total = (total+palcos);
-                    ubicacion = "Palcos";
+                    ubicacion.ubicacion = "Palcos";
                     preciobase = 7200;
                     break;
                 default:
@@ -422,7 +426,7 @@ public class Teatro_moro_3 {
      
             
             System.out.println("Resumen de la compra:");
-            System.out.println("Ubicacion del asiento: " + ubicacion);
+            System.out.println("Ubicacion del asiento: " + ubicacion.ubicacion);
             System.out.println("Precio base de la entrada: $" + preciobase);
             System.out.println("Descuento aplicado: " + (descuento * 100) + "%");
             System.out.println("Precio final a pagar: $" + total);
